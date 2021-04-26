@@ -1,3 +1,8 @@
+## 4월 26일
+-요일 언어 설정 : 한국어 추가
+-월별 역순 정렬 : 최근 월부터 
+
+
 # react-native-common-date-picker
 
 [![npm version](https://badge.fury.io/js/react-native-common-date-picker.svg)](https://badge.fury.io/js/react-native-common-date-picker) ![MIT](https://img.shields.io/npm/l/react-native-common-date-picker) ![Platform-Android&iOS](https://img.shields.io/badge/platform-Android%26iOS-41BC1D)
