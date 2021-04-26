@@ -53,7 +53,6 @@ class CalendarList extends Component {
   };
 
   _renderItem = ({ item, index }) => {
-    console.log("renderItem::", item, "/", index);
     const {
       minDate,
       maxDate,
