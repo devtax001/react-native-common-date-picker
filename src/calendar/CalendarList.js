@@ -29,23 +29,16 @@ class CalendarList extends Component {
    * @param date A date string representing the date selected such as '2020-5-11'.
    */
   _selectDate = (date, index) => {
-    const { startDate, endDate } = this.state;
-    if (startDate && endDate) {
+    const { startDate } = this.state;
+    if (startDate) {
       this.setState({
         startDate: date,
-        endDate: "",
       });
       return;
     }
-    if (startDate) {
-      const isBigger = Constants.greaterThan(startDate, date);
-      this.setState({
-        startDate: isBigger ? date : startDate,
-        endDate: isBigger ? startDate : date,
-      });
-    } else {
-      this.setState({ startDate: date });
-    }
+
+    this.setState({ startDate: date });
+
     const { onPressDate } = this.props;
     onPressDate &&
       typeof onPressDate === "function" &&
